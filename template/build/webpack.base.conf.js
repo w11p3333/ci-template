@@ -25,9 +25,7 @@ module.exports = {
       resolve('node_modules')
     ],
     alias: {
-      {{#if_eq build "standalone"}}
       'vue$': 'vue/dist/vue.common.js',
-      {{/if_eq}}
       'src': resolve('src'),
       'assets': resolve('src/assets'),
       'components': resolve('src/components')
@@ -35,7 +33,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {{#lint}}
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
@@ -45,7 +42,6 @@ module.exports = {
           formatter: require('eslint-friendly-formatter')
         }
       },
-      {{/lint}}
       {
         test: /\.vue$/,
         loader: 'vue-loader',
