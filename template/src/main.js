@@ -1,24 +1,27 @@
-{{#if_eq build "standalone"}}
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-{{/if_eq}}
-import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{#router}}
-import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/router}}
+// import base module
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+// import components
+import components from './components'
+// import components framework
+import elementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
+// remember to Vue.use() every module
+Vue.use(elementUI)
+
+// register global components  make hello => ci-hello
+Object.keys(components).forEach(key => {
+  Vue.component(`ci-${key}`, components[key])
+})
+
+// mounted vue to App component
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
-  {{#if_eq build "runtime"}}
-  render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  {{/if_eq}}
-  {{#if_eq build "standalone"}}
+  render: h => h(App),
   template: '<App/>',
-  components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  {{/if_eq}}
-}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  components: { App }
+})
