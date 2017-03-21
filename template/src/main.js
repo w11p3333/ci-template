@@ -5,11 +5,12 @@ import router from './router'
 // import components
 import components from './components'
 // import components framework
-import elementUI from 'element-ui'
+import ciComponents from 'ci-components'
 import 'element-ui/lib/theme-default/index.css'
+import 'ci-components/css/index.scss'
 
 // remember to Vue.use() every module
-Vue.use(elementUI)
+Vue.use(ciComponents) // ci-components aleready use element ui
 
 // register global components  make hello => ci-hello
 Object.keys(components).forEach(key => {
