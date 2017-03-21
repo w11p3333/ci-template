@@ -1108,6 +1108,14 @@ chokidar@^1.4.1, chokidar@^1.4.3:
   optionalDependencies:
     fsevents "^1.0.0"
 
+ci-components@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/ci-components/-/ci-components-0.0.7.tgz#dd07af69a0fc8ba63b8afc411dc0c598f9dfd642"
+  dependencies:
+    element-ui "^1.2.5"
+    shelljs "^0.7.7"
+    vue-loader "^11.1.4"
+
 cipher-base@^1.0.0, cipher-base@^1.0.1:
   version "1.0.3"
   resolved "https://registry.npmjs.org/cipher-base/-/cipher-base-1.0.3.tgz#eeabf194419ce900da3018c207d212f2a6df0a07"
@@ -4662,7 +4670,7 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
 
-shelljs@^0.7.5, shelljs@^0.7.6:
+shelljs@^0.7.5, shelljs@^0.7.6, shelljs@^0.7.7:
   version "0.7.7"
   resolved "https://registry.npmjs.org/shelljs/-/shelljs-0.7.7.tgz#b2f5c77ef97148f4b4f6e22682e10bba8667cff1"
   dependencies:
@@ -5211,7 +5219,7 @@ vue-hot-reload-api@^2.0.11:
   version "2.0.11"
   resolved "https://registry.npmjs.org/vue-hot-reload-api/-/vue-hot-reload-api-2.0.11.tgz#bf26374fb73366ce03f799e65ef5dfd0e28a1568"
 
-vue-loader@^11.0.0:
+vue-loader@^11.0.0, vue-loader@^11.1.4:
   version "11.1.4"
   resolved "https://registry.npmjs.org/vue-loader/-/vue-loader-11.1.4.tgz#d399b0ee10b34f2e41183b1e52255c4ab9f1f845"
   dependencies:
