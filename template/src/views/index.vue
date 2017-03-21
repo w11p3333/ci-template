@@ -1,7 +1,7 @@
 <template>
-
-  <ci-hello />
-
+  <div>
+    <ci-hello />
+  </div>
 </template>
 
 <script>
