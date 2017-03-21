@@ -1,8 +1,8 @@
 {
-  "name": "name",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "description",
-  "author": "author",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "ci-components": "^0.0.7",
+    "ci-components": "^0.0.9",
+    "ci-network": "^0.0.3",
     "element-ui": "^1.2.5",
     "node-sass": "^4.5.1",
     "nprogress": "^0.2.0",
