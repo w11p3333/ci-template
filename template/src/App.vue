@@ -1,18 +1,22 @@
 <template>
-  <div id="app">
-    <ci-navbar theme="dark" mode="horizontal" :data="data" class="topbar" />
-    <div class="container">
-      <ci-navbar mode="vertical" :data="data" class="sidebar" />
-      <div class="content">
-        <router-view />
-      </div>
-    </div>
 
+  <div id="app">
+
+    <ci-navbar theme="dark" mode="horizontal" :data="data" />
+
+    <ci-container>
+      <ci-navbar mode="vertical" :data="data" />
+
+      <ci-content>
+        <router-view />
+      </ci-content>
+
+    </ci-container>
   </div>
+
 </template>
 
 <script>
-
 export default {
   name: 'app',
   data () {
@@ -20,7 +24,8 @@ export default {
       data: [
         {
           title: '处理中心',
-          link: 'www.baidu.com'
+          link: 'www.baidu.com',
+          icon: 'el-icon-message'
         },
         {
           title: '我的工作台',

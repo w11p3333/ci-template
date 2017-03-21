@@ -5,16 +5,16 @@ import router from './router'
 // import components
 import components from './components'
 // import components framework
-import ciComponents from 'ci-components'
+import CIComponents from 'ci-components'
 import 'element-ui/lib/theme-default/index.css'
 import 'ci-components/css/index.scss'
 
 // remember to Vue.use() every module
-Vue.use(ciComponents) // ci-components aleready use element ui
+Vue.use(CIComponents)
 
 // register global components  make hello => ci-hello
-Object.keys(components).forEach(key => {
-  Vue.component(`ci-${key}`, components[key])
+components.map(component => {
+  Vue.component(`ci-${component.name}`, component)
 })
 
 // mounted vue to App component

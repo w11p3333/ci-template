@@ -3,6 +3,6 @@
 // ================================
 import hello from './Hello'
 
-export default {
+export default [
   hello
-}
+]

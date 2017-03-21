@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from 'src/store'
-import index from 'views/index'
 // import processbar
 import processbar from 'nprogress'
 import 'nprogress/nprogress.css'
+// import views
+import index from 'views/index'
+import notFound from 'views/notFound'
+import noAccess from 'views/noAccess'
 
 Vue.use(Router)
 
@@ -21,6 +24,15 @@ const router = new Router({
     {
       path: '/',
       redirect: '/index'
+    },
+    {
+      path: '/noAccess',
+      name: 'noAccess',
+      component: noAccess
+    },
+    {
+      path: '*',
+      component: notFound
     }
   ]
 })
