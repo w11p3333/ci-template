@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>\{{ msg }}</h1>
+    <img src="../assets/logo.png">
+    <h1>{{ msg }}</h1>
     <h2>Ecosystem</h2>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
@@ -24,6 +25,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 h1, h2 {
   font-weight: normal;
 }

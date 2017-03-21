@@ -1,7 +1,7 @@
 // ================================
 // export components
 // ================================
-import hello from './Hello.vue'
+import hello from './Hello'
 
 export default {
   hello
