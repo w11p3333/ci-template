@@ -1,8 +1,7 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
-    <h1></h1>
-    <h2>{{ title }}</h2>
+    <h1>{{ title }}</h1>
     <el-button @click="changeLanguage">{{ btnText }}</el-button>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
@@ -16,10 +15,12 @@
 <script>
 export default {
   name: 'hello',
-  data () {
-    return {
-      title: this.$t('hello.title'),
-      btnText: this.$t('hello.btn')
+  computed: {
+    title () {
+      return this.$t('hello.title')
+    },
+    btnText () {
+      return this.$t('hello.btn')
     }
   },
   methods: {
