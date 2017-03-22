@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Ecosystem</h2>
+    <h1></h1>
+    <h2>{{ $t('hello.title') }}</h2>
+    <el-button @click="changeLanguage">{{ $t("hello.btn") }}</el-button>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -15,9 +16,9 @@
 <script>
 export default {
   name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  methods: {
+    changeLanguage () {
+      this.$i18n.locale = this.$i18n.locale === 'zh' ? 'en' : 'zh'
     }
   }
 }
