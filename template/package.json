@@ -24,7 +24,12 @@
     "vue": "^2.1.10",
     "vue-i18n": "^6.0.0-beta.1",
     "vue-router": "^2.2.0",
-    "vuex": "^2.2.1"
+    "vuex": "^2.2.1",
+    "vue-quill-editor": "^2.0.0",
+    "vue-echarts-v3": "^1.0.3",
+    "simplemde-theme-base": "^0.1.2",
+    "github-markdown-css": "^2.4.1",
+    "vue-simplemde": "^0.3.7",
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
