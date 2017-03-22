@@ -1112,9 +1112,9 @@ chokidar@^1.4.1, chokidar@^1.4.3:
   optionalDependencies:
     fsevents "^1.0.0"
 
-ci-components@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/ci-components/-/ci-components-0.0.9.tgz#b6dec575bd9409682c108e593486aa07b1f41e43"
+ci-components@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.npmjs.org/ci-components/-/ci-components-0.0.12.tgz#7cb90a35293625fcb2e350d6340619085fe40699"
   dependencies:
     element-ui "^1.2.5"
 

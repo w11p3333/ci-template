@@ -6,8 +6,10 @@ import processbar from 'nprogress'
 import 'nprogress/nprogress.css'
 // import views
 import index from 'views/index'
-import notFound from 'views/notFound'
-import noAccess from 'views/noAccess'
+// import notFound from 'views/notFound'
+// import noAccess from 'views/noAccess'
+const notFound = resolve => import('views/notFound').then(resolve)
+const noAccess = resolve => import('views/noAccess').then(resolve)
 
 Vue.use(Router)
 
@@ -55,6 +57,7 @@ router.beforeEach(async (to, from, next) => {
       console.log(`当前用户登录状态为已登录: ${isLogin} 拥有权限: ${hasAccess}`)
       if (!isLogin) throw new Error('登录失败')
       else if (!hasAccess) next({ name: 'noAccess', query: { appkey, channel } }) // if no access
+      else next()
     } catch (e) {
       console.log(e)
       window.location.href = `${LOGIN_URL}&appkey=${appkey}`

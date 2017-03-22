@@ -3,7 +3,7 @@ import CINetwork from 'ci-network'
 import store from 'src/store'
 import DEV_CONSTS from '../../config/dev.consts.js'
 
-const DOMAIN = process.env.NODE_ENV !== 'production' ? DEV_CONSTS.DEV_DOMAIN : ''
+const DOMAIN = process.env.NODE_ENV !== 'production' ? DEV_CONSTS.DEV_DOMAIN : '/'
 
 Vue.use(CINetwork)
 
@@ -27,5 +27,5 @@ function createParams (params) {
 
 // created post request
 export default function createApi (url, params) {
-  return CINetwork.createApi(`${DOMAIN}url`, createParams(params))
+  return CINetwork.createApi(`${DOMAIN}${url}`, createParams(params))
 }
