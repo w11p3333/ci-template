@@ -18,7 +18,7 @@ module.exports = {
       "type": "string",
       "required": false,
       "message": "Project description",
-      "default": "A Vue.js project"
+      "default": "IDG B-side Vue.js project"
     },
     "author": {
       "type": "string",
