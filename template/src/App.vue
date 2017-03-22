@@ -8,7 +8,9 @@
       <ci-navbar mode="vertical" :data="data" />
 
       <ci-content>
-        <router-view />
+        <transition name="fade" mode="out-in">
+          <router-view />
+        </transition>
       </ci-content>
 
     </ci-container>
@@ -23,40 +25,42 @@ export default {
     return {
       data: [
         {
-          title: '处理中心',
-          link: 'www.baidu.com',
+          title: '我的控制台',
+          link: '#index',
           icon: 'el-icon-message'
         },
         {
-          title: '我的工作台',
+          title: '组件',
           items: [
             {
-              title: '分组二',
               items: [
                 {
-                  title: '导航三',
-                  link: 'www.baidu.com'
-                },
-                {
-                  title: '导航四'
+                  title: '实例',
+                  link: '#example'
                 }
               ]
             }
           ]
         },
         {
-          title: '订单管理',
-          items: [
-            {
-              title: '分组三'
-            },
-            {
-              title: '分组四'
-            }
-          ]
+          title: '无权限',
+          link: '#noAccess'
+        },
+        {
+          title: '404',
+          link: '#notFound'
         }
       ]
     }
   }
 }
 </script>
+
+<style lang="scss" scope>
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s
+  }
+  .fade-enter, .fade-leave-active {
+    opacity: 0
+  }
+</style>
