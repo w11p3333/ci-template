@@ -9,6 +9,8 @@ import CIComponents from 'ci-components'
 import 'element-ui/lib/theme-default/index.css'
 import 'ci-components/css/index.scss'
 
+// Vue.config.lang = 'zh-cn'   default chinese also can switch to 'en'
+
 // remember to Vue.use() every module
 Vue.use(CIComponents)
 

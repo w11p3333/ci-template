@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-3": "^6.22.0",
-    "ci-components": "^0.0.12",
+    "ci-components": "^0.0.14",
     "ci-network": "^0.0.3",
     "element-ui": "^1.2.5",
     "node-sass": "^4.5.1",
