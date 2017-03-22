@@ -8,7 +8,7 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",{{#unit}}
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"{{/unit}},
+    "test": "npm run unit",{{/unit}}
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
