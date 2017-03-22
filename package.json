@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "vue-cli": "^2.8.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.0",
+    "vue": "^2.2.4"
   }
 }
