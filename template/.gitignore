@@ -5,7 +5,3 @@ npm-debug.log
 {{#unit}}
 test/unit/coverage
 {{/unit}}
-{{#e2e}}
-test/e2e/reports
-selenium-debug.log
-{{/e2e}}
