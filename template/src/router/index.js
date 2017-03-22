@@ -8,6 +8,7 @@ import 'nprogress/nprogress.css'
 import index from 'views/index'
 // import notFound from 'views/notFound'
 // import noAccess from 'views/noAccess'
+const example = resolve => import('views/example').then(resolve)
 const notFound = resolve => import('views/notFound').then(resolve)
 const noAccess = resolve => import('views/noAccess').then(resolve)
 
@@ -22,6 +23,11 @@ const router = new Router({
       name: 'index',
       component: index,
       meta
+    },
+    {
+      path: '/example',
+      name: 'example',
+      component: example
     },
     {
       path: '/',
