@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
-    <h1>{{ $t('hello.title') }}</h1>
-    <el-button @click="changeLanguage">{{ $t('hello.btn') }}</el-button>
+    <h1>111</h1>
+    <el-button @click="changeLanguage">1111</el-button>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
