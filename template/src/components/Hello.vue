@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
-    <h1>111</h1>
-    <el-button @click="changeLanguage">1111</el-button>
+    <h1>{{ titleText }}</h1>
+    <el-button @click="changeLanguage">{{ btnText }}</el-button>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -16,7 +16,7 @@
 export default {
   name: 'hello',
   computed: {
-    title () {
+    titleText () {
       return this.$t('hello.title')
     },
     btnText () {
