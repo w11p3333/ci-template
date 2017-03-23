@@ -10,8 +10,8 @@ import index from 'views/index'
 // import noAccess from 'views/noAccess'
 {{#example}}
 const example = resolve => import('views/example').then(resolve)
-const notFound = resolve => import('views/notFound').then(resolve)
 {{/example}}
+const notFound = resolve => import('views/notFound').then(resolve)
 const noAccess = resolve => import('views/noAccess').then(resolve)
 
 Vue.use(Router)
