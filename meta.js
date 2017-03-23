@@ -22,7 +22,8 @@ module.exports = {
     },
     "author": {
       "type": "string",
-      "message": "Your name"
+      "message": "Your name",
+      "required": true
     },
     "service": {
       "type": "string",

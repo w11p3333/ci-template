@@ -40,11 +40,11 @@ export default {
       return [
         {
           title: this.$t('nav.home'),
-          name: 'index', // use vue router name
-          icon: 'el-icon-message'
+          name: 'index' // use vue router name
         },
         {
           title: this.$t('nav.components'),
+          icon: 'el-icon-message', // use icon class name
           items: [
             {
               title: this.$t('nav.example'),

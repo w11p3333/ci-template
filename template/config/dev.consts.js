@@ -6,7 +6,7 @@ module.exports = {
   DEV_DOMAIN: 'http://idg-' + '{{ author }}' + '.tunnel.nibaguai.com/', // TO FILL IN YOUR DOMAIN
   DEV_USER_INFO: {
     appkey: '{{ appkey }}',
-    channel: '{{ channel }}',
+    channel: parseInt('{{ channel }}'),
     account_id: 'dev',
     nickname: '{{ author }}'
   }
