@@ -22,10 +22,11 @@ module.exports = {
     },
     "author": {
       "type": "string",
-      "message": "Author"
+      "message": "Your name"
     },
     "service": {
       "type": "string",
+      "message": "Your project service name",
       "required": true
     },
     "unit": {

@@ -3,7 +3,7 @@
  */
 module.exports = {
   SERVICE_NAME: '{{ service }}', // 会员服务
-  DEV_DOMAIN: 'http://idg-luliangxiao.tunnel.nibaguai.com/', // TO FILL IN YOUR DOMAIN
+  DEV_DOMAIN: 'http://idg-' + '{{ author }}' + '.tunnel.nibaguai.com/', // TO FILL IN YOUR DOMAIN
   DEV_USER_INFO: {
     appkey: 'rjtwfgeqm2ankhx91wcp3hkeycujiutl',
     channel: 1,
