@@ -3,6 +3,7 @@
     <img src="../assets/logo.png">
     <h1>\{{ titleText }}</h1>
     <el-button @click="changeLanguage">\{{ btnText }}</el-button>
+    <pre>\{{ help }}</pre>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -15,6 +16,11 @@
 <script>
 export default {
   name: 'hello',
+  data () {
+    return {
+      help: 'write in src/components/Hello.vue and save'
+    }
+  },
   computed: {
     titleText () {
       return this.$t('hello.title')
