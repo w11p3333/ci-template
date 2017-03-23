@@ -29,6 +29,16 @@ module.exports = {
       "message": "Your project service name",
       "required": true
     },
+    "appkey": {
+      "type": "string",
+      "message": "Your dev appkey",
+      "default": "rjtwfgeqm2ankhx91wcp3hkeycujiutl"
+    },
+    "channel": {
+      "type": "integer",
+      "message": "Your dev channel",
+      "default": 1
+    },
     "unit": {
       "type": "confirm",
       "message": "Setup unit tests with Karma + Mocha?"
