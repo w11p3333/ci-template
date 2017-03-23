@@ -10,6 +10,7 @@ export default {
     components: 'components',
     example: 'example',
     {{/example}}
-    noAccess: 'noAccess'
+    noAccess: 'noAccess',
+    user: 'user'
   }
 }

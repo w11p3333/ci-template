@@ -34,7 +34,7 @@ export default {
     },
     username () {
       const user = this.$store.state.user.userInfo
-      return user ? user.nickname : '用户'
+      return user ? user.nickname : this.$t('nav.user')
     },
     navData () {
       return [
