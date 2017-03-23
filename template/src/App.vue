@@ -2,17 +2,17 @@
 
   <div id="app">
 
-    <ci-navbar
-      theme="dark"
-      mode="horizontal"
+    <ci-topbar
+      class="light-blue"
       :data="navData"
       :username="username"
-      :appname="appname" />
+      :titlename="appname" />
 
     <ci-container>
-      <ci-navbar
-      mode="vertical"
-      :data="navData" />
+      <ci-sidebar
+      class="light-blue"
+      :data="navData"
+      :titlename="appname" />
 
       <ci-content>
         <transition name="fade" mode="out-in">
