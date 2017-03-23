@@ -21,29 +21,31 @@
 <script>
 export default {
   name: 'app',
-  data () {
-    return {
-      data: [
+  computed () {
+    navData () {
+      return [
         {
-          title: '我的控制台',
+          title: this.$t('nav.title'),
           link: '#index',
           icon: 'el-icon-message'
         },
+        {{#example}}
         {
-          title: '组件',
+          title: this.$t('nav.components'),
           items: [
             {
               items: [
                 {
-                  title: '实例',
+                  title: this.$t('nav.example'),
                   link: '#example'
                 }
               ]
             }
           ]
         },
+        {{/example}}
         {
-          title: '无权限',
+          title: this.$t('nav.noAccess'),
           link: '#noAccess'
         },
         {
