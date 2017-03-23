@@ -1,9 +1,8 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
-    <h2>{{ titleText }}</h2>
-    <h1>{{ titleText }}</h1>
-    <el-button @click="changeLanguage">{{ btnText }}</el-button>
+    <h1>\{{ titleText }}</h1>
+    <el-button @click="changeLanguage">\{{ btnText }}</el-button>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
