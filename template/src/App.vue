@@ -2,10 +2,10 @@
 
   <div id="app">
 
-    <ci-navbar theme="dark" mode="horizontal" :data="data" />
+    <ci-navbar theme="dark" mode="horizontal" :data="navData" />
 
     <ci-container>
-      <ci-navbar mode="vertical" :data="data" />
+      <ci-navbar mode="vertical" :data="navData" />
 
       <ci-content>
         <transition name="fade" mode="out-in">
