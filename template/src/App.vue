@@ -26,31 +26,25 @@ export default {
       return [
         {
           title: this.$t('nav.title'),
-          link: '#index',
+          name: 'index', // use vue router name
           icon: 'el-icon-message'
         },
-        {{#example}}
         {
           title: this.$t('nav.components'),
           items: [
             {
-              items: [
-                {
-                  title: this.$t('nav.example'),
-                  link: '#example'
-                }
-              ]
+              title: this.$t('nav.example'),
+              hash: '/example' // use vue router path
             }
           ]
         },
-        {{/example}}
         {
           title: this.$t('nav.noAccess'),
-          link: '#noAccess'
+          name: 'noAccess'
         },
         {
           title: '404',
-          link: '#notFound'
+          link: '/#/no.html' // use normal href
         }
       ]
     }

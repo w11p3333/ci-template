@@ -10,7 +10,7 @@ import en from './en'
 Vue.use(VueI18n)
 
 export default new VueI18n({
-  locale: 'zh',
+  locale: 'en',
   messages: {
     en: {
       ...en,
