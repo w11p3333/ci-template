@@ -24,6 +24,10 @@ module.exports = {
       "type": "string",
       "message": "Author"
     },
+    "service": {
+      "type": "string",
+      "required": true
+    },
     "unit": {
       "type": "confirm",
       "message": "Setup unit tests with Karma + Mocha?"
