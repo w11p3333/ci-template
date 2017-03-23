@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <img src="../assets/logo.png">
+    <h2>{{ titleText }}</h2>
     <h1>{{ titleText }}</h1>
     <el-button @click="changeLanguage">{{ btnText }}</el-button>
     <ul>
