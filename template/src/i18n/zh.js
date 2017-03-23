@@ -5,8 +5,10 @@ export default {
   },
   nav: {
     title: '我的控制台',
+    {{#example}}
     components: '组件',
     example: '实例',
+    {{/example}}
     noAccess: '无权限'
   }
 }
