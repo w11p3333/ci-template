@@ -27,7 +27,7 @@
     "vue-echarts-v3": "^1.0.3",
     "simplemde-theme-base": "^0.1.2",
     "github-markdown-css": "^2.4.1",
-    "vue-simplemde": "^0.3.7",
+    "vue-simplemde": "^0.3.7"
     {{/example}}
   },
   "devDependencies": {
