@@ -66,7 +66,11 @@ export default {
   mounted () {
     setTimeout(_ => {
       this.loading = false
-    }, 1500)
+    }, 1000)
+    this.$message({
+      message: 'welcome to components',
+      type: 'success'
+    })
   },
   methods: {
     onReady (instance) {
