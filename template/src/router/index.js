@@ -8,8 +8,10 @@ import 'nprogress/nprogress.css'
 import index from 'views/index'
 // import notFound from 'views/notFound'
 // import noAccess from 'views/noAccess'
+{{#example}}
 const example = resolve => import('views/example').then(resolve)
 const notFound = resolve => import('views/notFound').then(resolve)
+{{/example}}
 const noAccess = resolve => import('views/noAccess').then(resolve)
 
 Vue.use(Router)
@@ -24,11 +26,13 @@ const router = new Router({
       component: index,
       meta
     },
+    {{#example}}
     {
       path: '/example',
       name: 'example',
       component: example
     },
+    {{/example}}
     {
       path: '/',
       redirect: '/index'
