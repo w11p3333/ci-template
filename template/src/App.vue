@@ -44,7 +44,7 @@ export default {
         },
         {
           title: this.$t('nav.components'),
-          icon: 'el-icon-message', // use icon class name
+          // icon: 'el-icon-message', // use icon class name
           items: [
             {
               title: this.$t('nav.example'),
