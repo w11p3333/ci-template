@@ -2,10 +2,17 @@
 
   <div id="app">
 
-    <ci-navbar theme="dark" mode="horizontal" :data="navData" />
+    <ci-navbar
+      theme="dark"
+      mode="horizontal"
+      :data="navData"
+      :username="username"
+      :appname="appname" />
 
     <ci-container>
-      <ci-navbar mode="vertical" :data="navData" />
+      <ci-navbar
+      mode="vertical"
+      :data="navData" />
 
       <ci-content>
         <transition name="fade" mode="out-in">
@@ -22,10 +29,17 @@
 export default {
   name: 'app',
   computed: {
+    appname () {
+      return this.$t('nav.title')
+    },
+    username () {
+      const user = this.$store.state.user.userInfo
+      return user ? user.nickname : '用户'
+    },
     navData () {
       return [
         {
-          title: this.$t('nav.title'),
+          title: this.$t('nav.home'),
           name: 'index', // use vue router name
           icon: 'el-icon-message'
         },

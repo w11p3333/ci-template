@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 // import i18n
 import i18n from './i18n'
 // import components
@@ -24,6 +25,7 @@ components.map(component => {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   i18n,
   router,
   render: h => h(App),
