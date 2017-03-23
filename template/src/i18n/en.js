@@ -6,9 +6,9 @@ export default {
   nav: {
     title: 'dashboard',
     {{#example}}
-    components,
+    components: 'components',
     {{/example}}
     example: 'example',
-    noAccess
+    noAccess: 'noAccess'
   }
 }

@@ -21,7 +21,7 @@
 <script>
 export default {
   name: 'app',
-  computed () {
+  computed: {
     navData () {
       return [
         {
