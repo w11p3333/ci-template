@@ -7,8 +7,8 @@ export default {
     title: 'dashboard',
     {{#example}}
     components: 'components',
-    {{/example}}
     example: 'example',
+    {{/example}}
     noAccess: 'noAccess'
   }
 }

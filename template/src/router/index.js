@@ -6,11 +6,10 @@ import processbar from 'nprogress'
 import 'nprogress/nprogress.css'
 // import views
 import index from 'views/index'
-// import notFound from 'views/notFound'
-// import noAccess from 'views/noAccess'
 {{#example}}
 const example = resolve => import('views/example').then(resolve)
 {{/example}}
+// async load
 const notFound = resolve => import('views/notFound').then(resolve)
 const noAccess = resolve => import('views/noAccess').then(resolve)
 
