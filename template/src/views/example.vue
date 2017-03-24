@@ -49,15 +49,21 @@ Vue.use(quillEditor)
 Vue.use(makedownEditor)
 
 export default {
+
   components: {
     eCharts
   },
+
   data () {
     return {
       loading: true,
+
       networkLoading: false,
+
       quillValue: '<b>Hello Quill Editor</b>',
+
       markdownValue: '# hello Markdown',
+
       chart: {
         title: {
           text: 'Hello Chart'
@@ -73,8 +79,10 @@ export default {
           data: [5, 20, 36, 10, 10, 20]
         }]
       }
+
     }
   },
+
   mounted () {
     setTimeout(_ => {
       this.loading = false
@@ -84,17 +92,25 @@ export default {
       })
     }, 1000)
   },
+
   methods: {
+
     /** about chartss */
     onReady (instance) {
     },
+
     onClick (event, instance, echarts) {
     },
+
     /** network */
     async getData () {
       this.networkLoading = true
       try {
         await apis.fetchLogin({ page_name: '/index' })
+        this.$message({
+          '网络请求成功',
+          type: 'success'
+        })
       } catch ({ message }) {
         this.$message({
           message,
@@ -112,6 +128,7 @@ export default {
       // also can use $http
       // this.$http.post  || this.$http.get
     }
+
   }
 }
 </script>

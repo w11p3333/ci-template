@@ -20,13 +20,16 @@ import {
   removeClass,
   hasClass
 } from 'ci-components/utils/index'
+
 export default {
   name: 'hello',
+
   data () {
     return {
       help: 'write in src/components/Hello.vue and save'
     }
   },
+
   computed: {
     titleText () {
       return this.$t('hello.title')
@@ -38,10 +41,13 @@ export default {
       return this.$t('hello.themeBtn')
     }
   },
+
   methods: {
+
     changeLanguage () {
       this.$i18n.locale = this.$i18n.locale === 'zh' ? 'en' : 'zh'
     },
+
     changeTheme () {
       this.$nextTick(_ => {
         const THEME_ARR = [
@@ -65,6 +71,7 @@ export default {
         }
       })
     }
+
   }
 }
 </script>
