@@ -1,7 +1,8 @@
 export default {
   hello: {
     title: '欢迎来到你的vue.js app',
-    btn: '切换语言'
+    languageBtn: '切换语言',
+    themeBtn: '切换主题'
   },
   nav: {
     title: '我的控制台',

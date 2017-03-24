@@ -1,7 +1,8 @@
 export default {
   hello: {
     title: 'welcome to your vue.js app',
-    btn: 'change language'
+    languageBtn: 'change language',
+    themeBtn: 'change theme'
   },
   nav: {
     title: 'dashboard',
