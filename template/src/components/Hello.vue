@@ -7,7 +7,7 @@
     <pre>\{{ help }}</pre>
     <ul>
       <li v-for="list of linkList">
-        <a :href="list.href" target="_blank">{{ list.name }}</a>
+        <a :href="list.href" target="_blank">\{{ list.name }}</a>
       </li>
     </ul>
   </div>
