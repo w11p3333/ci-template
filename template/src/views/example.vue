@@ -108,7 +108,7 @@ export default {
       try {
         await apis.fetchLogin({ page_name: '/index' })
         this.$message({
-          '网络请求成功',
+          message: '网络请求成功',
           type: 'success'
         })
       } catch ({ message }) {
