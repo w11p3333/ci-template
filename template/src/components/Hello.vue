@@ -35,7 +35,7 @@ export default {
       return this.$t('hello.languageBtn')
     },
     themeBtnText () {
-      return this.$t('lello.themeBtn')
+      return this.$t('hello.themeBtn')
     }
   },
   methods: {
