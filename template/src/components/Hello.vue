@@ -6,10 +6,9 @@
     <el-button @click="changeTheme">\{{ themeBtnText }}</el-button>
     <pre>\{{ help }}</pre>
     <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      <li v-for="list of linkList">
+        <a :href="list.href" target="_blank">{{ list.name }}</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -21,15 +20,51 @@ import {
   hasClass
 } from 'ci-components/utils/index'
 
+// import Vue from 'vue'
+
+/** *********************** register directive  ************************* **/
+// Vue.directive('focus', {
+//   bind: function () {},
+//   inserted: function (el) {
+//     el.focus()
+//   }
+// })
+
+/** *********************** register mixin  ************************* **/
+// const HELLO_MIXIN = {
+//   created () {
+//     console.log('hello world')
+//   }
+// }
+
 export default {
   name: 'hello',
 
+  /** *********************** mixin  ************************* **/
+  // mixins: [HELLO_MIXIN],
+
+  /** *********************** register local components  ************************* **/
+  components: {
+  },
+
+  /** ***********************  data from parent component ************************* **/
+  props: {
+  },
+
+  /** ***********************  local data  ************************* **/
   data () {
     return {
-      help: 'write in src/components/Hello.vue and save'
+      help: 'write in src/components/Hello.vue and save',
+      linkList: [
+        { href: 'http://router.vuejs.org/', name: 'vue-router' },
+        { href: 'http://vuex.vuejs.org/', name: 'vuex' },
+        { href: 'http://vue-loader.vuejs.org/', name: 'vue-loader' },
+        { href: 'https://github.com/vuejs/awesome-vue', name: 'awesome-vue' }
+      ]
     }
   },
 
+  /** ***********************  data after computed  ************************* **/
   computed: {
     titleText () {
       return this.$t('hello.title')
@@ -42,6 +77,24 @@ export default {
     }
   },
 
+  /** ***********************  life ciycle  ************************* **/
+
+  beforeCreate () {},
+  created () {}, // before dom create
+  mounted () {
+    // everytime dom render over
+    this.$nextTick(_ => {
+     // document.getElementsById
+    })
+  }, // after dom created
+  beforeUpdate () {},
+  updated () {},
+  activated () {},
+  deactivated () {},
+  beforeDestroy () {},
+  destroyed () {},
+
+  /** ***********************  functions  ************************* **/
   methods: {
 
     changeLanguage () {
@@ -72,7 +125,12 @@ export default {
       })
     }
 
+  },
+
+  /** ***********************  watch for data change  ************************* **/
+  watch: {
   }
+
 }
 </script>
 
@@ -102,4 +160,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
