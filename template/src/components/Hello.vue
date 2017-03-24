@@ -2,8 +2,8 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>\{{ titleText }}</h1>
-    <el-button @click="changeLanguage">\{{ changeLanguage }}</el-button>
-    <el-button @click="changeTheme">\{{ changeTheme }}</el-button>
+    <el-button @click="changeLanguage">\{{ languageBtnText }}</el-button>
+    <el-button @click="changeTheme">\{{ themeBtnText }}</el-button>
     <pre>\{{ help }}</pre>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
@@ -31,10 +31,10 @@ export default {
     titleText () {
       return this.$t('hello.title')
     },
-    changeLanguage () {
+    languageBtnText () {
       return this.$t('hello.languageBtn')
     },
-    changeTheme () {
+    themeBtnText () {
       return this.$t('lello.themeBtn')
     }
   },
