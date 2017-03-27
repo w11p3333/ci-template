@@ -1,13 +1,8 @@
-# vue-webpack-boilerplate
+# ci-template
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+> a vue2.0 template based on IDG
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
 
-## Documentation
-
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
 
 ## Usage
 
@@ -15,13 +10,24 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init w11p3333/ci-template my-project
 $ cd my-project
 $ npm install
 $ npm run dev
 ```
 
-## What's Included
+## What's Framework Included
+	- vue 2.1.10
+	- vue-router 2.2.0
+	- vuex 2.2.1
+	- axios 0.15.3
+	- element-ui 1.2.5
+	- babel
+	- loaders
+	- ci-components(base on IDG)
+	- ci-network(base on IDG)
+
+## What's Script Included
 
 - `npm run dev`: first-in-class development experience.
   - Webpack + `vue-loader` for single file Vue components.
@@ -42,11 +48,6 @@ $ npm run dev
   - Supports all webpack loaders.
   - Easy mock injection.
 
-- `npm run e2e`: End-to-end tests with [Nightwatch](http://nightwatchjs.org/).
-  - Run tests in multiple browsers in parallel.
-  - Works with one command out of the box:
-    - Selenium and chromedriver dependencies automatically handled.
-    - Automatically spawns the Selenium server.
 
 ### Fork It And Make Your Own
 
@@ -55,3 +56,5 @@ You can fork this repo to create your own boilerplate, and use it with `vue-cli`
 ``` bash
 vue init username/repo my-project
 ```
+
+
