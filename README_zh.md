@@ -1,6 +1,6 @@
 # ci-template
 
-> 基于vue2.0的中台B端模板
+> 基于vue2.0的中台B端模板 [项目地址](https://github.com/w11p3333/ci-template)
 
 ## 语言
 - [English](./README.md)
@@ -27,7 +27,7 @@ $ npm install
 $ npm run dev
 ```
 
-## 文件结构
+## 目录结构
 
 ![files](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170324_10.png)
 
@@ -39,17 +39,21 @@ $ npm run dev
 ![pack config](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170327_5.png)
 
 ## 主要依赖库
-- vue 2.1.10
-- vue-router 2.2.0
-- vuex 2.2.1
-- vue-i18n 1.2.5
-- babel state 3
-- scss/vue/...loaders
+- [vue](https://github.com/vuejs/vue): 2.1.10
+- [vue router](https://github.com/vuejs/vue-router): 2.2.0
+- [vuex](https://github.com/vuejs/vuex): 2.2.1
+- [vue-i18n](https://github.com/kazupon/vue-i18n):  1.2.5
+- [babel](https://github.com/babel/babel)
 - [ci-components(base on IDG)](https://www.npmjs.com/package/ci-components)
-  - element-ui 1.2.5
 - [ci-network(base on IDG)](https://www.npmjs.com/package/ci-network)
-  - axios 0.15.3
-  - qs 6.4.0
+- webpack scss/vue/...loaders
+
+## 如何开发
+
+- 1. 在`src/components/`中添加组件,  在`src/views/`中添加页面
+- 2. 在`src/apis/index.js`中添加接口
+- 3. 在`src/store/...`中添加vuex相关代码
+- 4. 在`src/router/index.js`中添加路由, 在`src/App.vue`中添加`sidebar` 和 `topbar`配置
 
 ## npm script
 

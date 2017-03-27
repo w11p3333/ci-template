@@ -1,6 +1,6 @@
 # ci-template
 
-> a vue2.0 template based on IDG
+> a vue2.0 template based on IDG [repo](https://github.com/w11p3333/ci-template)
 
 ## lanuage
 [Chinese](./README_zh.md)
@@ -27,7 +27,7 @@ $ npm install
 $ npm run dev
 ```
 
-## Files
+## Directories Structure
 
 ![files](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170324_10.png)
 
@@ -35,7 +35,7 @@ $ npm run dev
 - dev config: config your `domain`  `service name` `appkey` `channel`
 ![dev config](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170327_4.png)
 
-- pack config: config your project pack location, default to ../webroot
+- pack config: config your project pack location, default pack to `../webroot`
 ![pack config](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170327_5.png)
 
 ## What's Library Included
@@ -57,7 +57,7 @@ $ npm run dev
 - 2. add apis in `src/apis/index.js`
 - 3. add store in 
      `src/store/...`
-- 4. add router about view in `src/router/index.js`
+- 4. add router about view in `src/router/index.js`, add your router path in `sidebar` or `topbar` in `src/App.vue` 
 
 
 ## What's Script Included
