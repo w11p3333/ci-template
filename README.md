@@ -17,15 +17,17 @@ $ npm run dev
 ```
 
 ## What's Framework Included
-	- vue 2.1.10
-	- vue-router 2.2.0
-	- vuex 2.2.1
-	- axios 0.15.3
-	- element-ui 1.2.5
-	- babel
-	- loaders
-	- ci-components(base on IDG)
-	- ci-network(base on IDG)
+- vue 2.1.10
+- vue-router 2.2.0
+- vuex 2.2.1
+- vue-i18n 1.2.5
+- babel state 3
+- scss/vue/...loaders
+- [ci-components(base on IDG)](https://www.npmjs.com/package/ci-components)
+  - element-ui 1.2.5
+- [ci-network(base on IDG)](https://www.npmjs.com/package/ci-network)
+  - axios 0.15.3
+  - qs 6.4.0
 
 ## What's Script Included
 
