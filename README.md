@@ -2,7 +2,18 @@
 
 > a vue2.0 template based on IDG
 
+## lanuage
+[Chinese](./README_zh.md)
 
+## before
+**you need know**
+- [npm](https://www.npmjs.com/)
+- [webpack](http://webpackdoc.com/)
+-  [vue](https://cn.vuejs.org/)
+-  [vue-router](https://router.vuejs.org/zh-cn/)
+-  [vuex](https://vuex.vuejs.org/zh-cn/)
+-  [element-ui](http://element.eleme.io/#/zh-CN)
+-  [scss](http://sass-lang.com/)
 
 ## Usage
 
@@ -16,18 +27,38 @@ $ npm install
 $ npm run dev
 ```
 
-## What's Framework Included
-- vue 2.1.10
-- vue-router 2.2.0
-- vuex 2.2.1
-- vue-i18n 1.2.5
+## Files
+
+![files](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170324_10.png)
+
+## Config
+- dev config: config your `domain`  `service name` `appkey` `channel`
+![dev config](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170327_4.png)
+
+- pack config: config your project pack location, default to ../webroot
+![pack config](http://7xtc17.com1.z0.glb.clouddn.com/Snip20170327_5.png)
+
+## What's Library Included
+- vue: 2.1.10
+- vue-router: 2.2.0
+- vuex: 2.2.1
+- vue-i18n: 1.2.5
 - babel state 3
 - scss/vue/...loaders
 - [ci-components(base on IDG)](https://www.npmjs.com/package/ci-components)
-  - element-ui 1.2.5
+  - element-ui: 1.2.5
 - [ci-network(base on IDG)](https://www.npmjs.com/package/ci-network)
-  - axios 0.15.3
-  - qs 6.4.0
+  - axios: 0.15.3
+  - qs: 6.4.0
+
+## How To Devolpment
+
+- 1. add your components in `src/components/` and views in `src/views/`
+- 2. add apis in `src/apis/index.js`
+- 3. add store in 
+     `src/store/...`
+- 4. add router about view in `src/router/index.js`
+
 
 ## What's Script Included
 
