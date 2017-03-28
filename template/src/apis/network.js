@@ -26,6 +26,6 @@ function createParams (params) {
 }
 
 // created post request
-export default function createApi (url, params) {
-  return CINetwork.createApi(`${DOMAIN}${url}`, createParams(params))
+export default function createApi (url, params, option = null) {
+  return CINetwork.createApi(`${DOMAIN}${url}`, createParams(params), option)
 }
