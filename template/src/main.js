@@ -1,4 +1,4 @@
-/****************************************   https://github.com/w11p3333/ci-template   **********************************************/
+/** **************************************   https://github.com/w11p3333/ci-template   ******************************************** **/
 // import base module
 import Vue from 'vue'
 import App from './App'
