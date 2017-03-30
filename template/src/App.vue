@@ -2,17 +2,17 @@
 
   <div id="app">
 
-    <ci-topbar
-      class="light-blue"
+    <ci-navbar
+      theme="dark"
+      mode="horizontal"
       :data="navData"
       :username="username"
-      :titlename="appname" />
+      :appname="appname" />
 
     <ci-container>
-      <ci-sidebar
-      class="light-blue"
-      :data="navData"
-      :titlename="appname" />
+      <ci-navbar
+      mode="vertical"
+      :data="navData" />
 
       <ci-content>
         <transition name="fade" mode="out-in">
@@ -42,8 +42,9 @@ export default {
           title: this.$t('nav.home'),
           name: 'index' // use vue router name
         },
+        {{#example}}
         {
-          title: this.$t('nav.components'),
+          title: this.$t('nav.components')
           // icon: 'el-icon-message', // use icon class name
           items: [
             {
@@ -52,6 +53,7 @@ export default {
             }
           ]
         },
+        {{/example}}
         {
           title: this.$t('nav.noAccess'),
           name: 'noAccess'
