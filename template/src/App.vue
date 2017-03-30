@@ -4,6 +4,8 @@
 
     <ci-topbar
       class="light-blue"
+      :data="navData"
+      :username="username"
       :appname="appname" />
 
     <ci-container>
