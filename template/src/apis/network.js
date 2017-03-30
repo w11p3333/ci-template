@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import CINetwork from 'ci-network'
+import CINetwork from 'ci-network'// DOCS: https://github.com/w11p3333/ci-network
 import store from 'src/store'
 import DEV_CONSTS from '../../config/dev.consts.js'
 

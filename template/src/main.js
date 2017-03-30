@@ -1,3 +1,4 @@
+/****************************************   https://github.com/w11p3333/ci-template   **********************************************/
 // import base module
 import Vue from 'vue'
 import App from './App'
@@ -8,7 +9,7 @@ import i18n from './i18n'
 // import components
 import components from './components'
 // import components framework
-import CIComponents from 'ci-components'
+import CIComponents from 'ci-components' // DOCS: https://github.com/w11p3333/ci-template
 // import css
 import 'element-ui/lib/theme-default/index.css'
 import 'ci-components/css/index.scss'
