@@ -6,7 +6,7 @@
       class="light-blue"
       :data="navData"
       :username="username"
-      :appname="appname" />
+      :titlename="appname" />
 
     <ci-container>
       <ci-sidebar
