@@ -9,9 +9,11 @@
     "build": "node build/build.js",{{#unit}}
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",{{/unit}}
-    "lint": "eslint --ext .js,.vue src",
-    "pre-commit": "npm run lint"
+    "lint": "eslint --ext .js,.vue src"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-3": "^6.22.0",
