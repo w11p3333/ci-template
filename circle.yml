@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - bash test.sh
+    - bash ci.sh

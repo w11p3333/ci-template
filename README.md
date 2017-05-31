@@ -2,10 +2,15 @@
 
 > a vue2.0 template based on IDG [repo](https://github.com/w11p3333/ci-template)
 
-## lanuage
+## Lanuage
+
 [Chinese](./README_zh.md)
 
-## before
+## Preview
+
+[demo](https://w11p3333.github.io/ci-template/example)
+
+## Before
 **you need know**
 - [npm](https://www.npmjs.com/)
 - [webpack](http://webpackdoc.com/)

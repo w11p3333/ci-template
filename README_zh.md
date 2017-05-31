@@ -3,7 +3,12 @@
 > 基于vue2.0的中台B端模板 [项目地址](https://github.com/w11p3333/ci-template)
 
 ## 语言
+
 - [English](./README.md)
+
+## 预览
+
+[demo](https://w11p3333.github.io/ci-template/example)
 
 ## 开始之前
 **你需要熟悉以下概念**
