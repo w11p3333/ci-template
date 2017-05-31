@@ -1,9 +1,11 @@
-<p align="center"><img width="100"src="https://camo.githubusercontent.com/728ce9f78c3139e76fa69925ad7cc502e32795d2/68747470733a2f2f7675656a732e6f72672f696d616765732f6c6f676f2e706e67"></a></p>
+<p align="center"><img width="100"src="https://camo.githubusercontent.com/728ce9f78c3139e76fa69925ad7cc502e32795d2/68747470733a2f2f7675656a732e6f72672f696d616765732f6c6f676f2e706e67"></p>
 
 <p align="center">
-  <a href="https://circleci.com/gh/w11p3333/ci-template/tree/master"><img src="https://img.shields.io/circleci/project/w11p3333/ci-template/master.svg" alt="Build Status"></a>
+  <a href="https://circleci.com/gh/w11p3333/ci-template/tree/master"><img src="https://circleci.com/gh/w11p3333/ci-template.svg?style=shield&circle-token=:circle-token" alt="Build Status" /></a>
+<!--   <a href="https://coveralls.io/github/w11p3333/ci-template?branch=master"><img src="https://img.shields.io/coveralls/w11p3333/ci-template/master.svg?style=flat" alt="Coverage" /></a> -->
   <img src="https://img.shields.io/github/stars/w11p3333/ci-template.svg?style=social&label=Star" alt="Build Status">
-  <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="License">
+  <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="License" />
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="Welcome PR" />
   <br>
 </p>
 
